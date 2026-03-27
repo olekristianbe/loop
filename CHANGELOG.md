@@ -2,6 +2,25 @@
 
 All notable changes to Loop will be documented in this file.
 
+## [0.1.1] - 2026-03-27
+
+### Fixed
+- Terminal duplication, scroll jumps, and auto-scroll rewrite
+- Terminal light mode support and input field contrast
+- Stale Claude sessions when switching projects
+- Unstaging files, planner file detection, clickable file paths in messages
+- Plan sort order (newest first)
+
+### Changed
+- Migrated from npm to bun
+- Modularized IPC handlers with URL validation
+- Decomposed large UI components into focused modules
+- Message queuing during streaming for multi-project support
+
+### Added
+- Changelog modal and distribution pipeline
+- UI polish and cleanup
+
 ## [0.1.0] - 2026-03-27
 
 Initial release.
@@ -22,4 +41,5 @@ Initial release.
 - Light and dark theme
 - Code signed and notarized by Apple
 
+[0.1.1]: https://github.com/olekristianbe/loop/releases/tag/v0.1.1
 [0.1.0]: https://github.com/olekristianbe/loop/releases/tag/v0.1.0
