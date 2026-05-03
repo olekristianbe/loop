@@ -5,7 +5,8 @@
 <h1 align="center">Loop</h1>
 
 <p align="center">
-  Native macOS app for running autonomous Claude Code agent sessions across multiple projects.
+  Native macOS app for running Claude Code and Codex coding sessions across
+  your projects — with a JSON planner, build orchestrator, and in-app preview.
 </p>
 
 <p align="center">
@@ -16,59 +17,62 @@
 
 ## Why Loop?
 
-Loop is a desktop IDE for coding with Claude. Instead of juggling terminal windows and losing context, you get:
+Loop is a desktop coding agent for local AI workflows. Instead of babysitting
+terminal windows or losing context between phases, you get:
 
-- **Work in the background** — Run Claude sessions while you do other things. Menu bar keeps you updated.
-- **Multi-project workspace** — Switch between projects instantly. Each has its own history, config, and git integration.
-- **Looping for iteration** — Run multiple cycles with validation between each. Perfect for complex refactoring or multi-step features.
-- **Mac-native experience** — Real UI, notifications, drag-drop. Way better than terminal-only.
-- **Structured workflow** — Plan, Research, Build, Review keeps Claude focused and context-efficient.
-- **GitHub integration** — Generate commits and PRs directly from the app.
+- **Plan → Build → Review in one app.** The planner turns your dump of ideas
+  into a JSON task list. The build orchestrator drives the agent through it,
+  one commit per task. Review surfaces issues into the next round.
+- **Multiple providers.** Claude Code (via the Anthropic SDK) and Codex CLI,
+  picked per task from a single provider/model dropdown.
+- **Multi-project workspace.** Switch between projects instantly. Each keeps
+  its own chat history, planner state, terminals, files panel, and git view.
+- **Human-check queue.** Tasks that need your eyes land in a queue with inline
+  notes; your feedback turns into the next plan round automatically.
+- **In-app web preview.** A `WebContentsView` next to the chat for previewing
+  the thing you're building, with browser automation hooks.
+- **Generate-then-edit.** Commit messages and PR titles are drafted by the
+  agent and edited by you before they ship.
 
-## Features
+## Workflow
 
-- **Multi-project management** — Add, organize, and run sessions across your codebases
-- **4-phase workflow** — Plan, Research, Build, Review
-- **Loop-based execution** — Run multiple iterations with validation between each
-- **Stream output** — Real-time display of tool use, results, and assistant text
-- **Session history** — Track past runs with git diffs and commit summaries
-- **Menu bar** — Quick status view and controls from the system tray
-- **Chat input** — Send messages to Claude anytime during a session
-- **Image attachments** — Drag-drop screenshots for visual context
+**Plan** — Drop ideas, bugs, or feature requests into the chat. The planner
+asks clarifying questions and produces a JSON task list with dependencies and
+scoped state. Existing plans can be edited or upgraded in place.
 
-## How It Works
+**Build** — The orchestrator runs tasks sequentially with their declared
+dependencies, validates after each (typecheck / test / lint), and commits one
+task at a time. You can queue messages, edit them while they wait, or steer
+mid-response.
 
-Loop uses a structured 4-phase workflow that keeps Claude focused and prevents context overload:
-
-**Plan** — Interactive Q&A session where you dump ideas, bugs, or features. Claude asks clarifying questions and generates a detailed spec with acceptance criteria.
-
-**Research** — Claude fetches official documentation and enriches your spec with API details, code patterns, warnings, and best practices.
-
-**Build** — Execute the spec step-by-step with fresh context for each task. Validates after each change (build, test, lint). Can loop multiple times until all tasks are done.
-
-**Review** — Claude scans the changes for bugs, verifies against documentation, checks for edge cases, and reports issues to feed into the next cycle.
+**Review** — Loop scans the changes for bugs, checks against documentation
+and references, and feeds findings into the next planning round through the
+human-check queue.
 
 ## Install
 
-1. Download the latest `.dmg` from [Releases](https://github.com/olekristianbe/loop/releases/latest)
-2. Open the DMG and drag Loop to Applications
-3. Launch Loop
+1. Download the latest `.dmg` from the [Releases page](https://github.com/olekristianbe/loop/releases/latest).
+2. Open the DMG and drag Loop to Applications.
+3. Launch Loop.
 
 ## Requirements
 
-Loop requires the Claude Code CLI. Install it first:
+Loop drives external coding agents. Install at least one before first run:
 
-1. Install from [claude.ai/code](https://claude.ai/code)
-2. Run `claude --version` to verify
-3. Configure your API key following the setup instructions
+- **Claude Code** — `npm install -g @anthropic-ai/claude-code`, then
+  `claude auth login`.
+- **Codex CLI** — install [Codex CLI](https://github.com/openai/codex) and
+  run `codex login`.
 
-**System requirements:**
-- macOS 15.0 (Sequoia) or later
-- Apple Silicon or Intel Mac
+**System:**
+- macOS 15 (Sequoia) or later
+- Apple Silicon (arm64). Intel Macs are not supported.
 
 ## Updates
 
-Loop checks for updates automatically and notifies you when a new version is available. You can also check manually via Loop > Check for Updates.
+Loop checks for updates in the background and surfaces a sidebar pill when one
+is available. Downloads and installs are user-initiated. You can also check
+manually from Settings.
 
 ## Support
 
@@ -77,4 +81,5 @@ Loop checks for updates automatically and notifies you when a new version is ava
 
 ## License
 
-Copyright 2026 Lytic AS. All rights reserved. Source code is not included in this distribution.
+Copyright 2026 Lytic AS. All rights reserved. Source code is not included in
+this distribution.
