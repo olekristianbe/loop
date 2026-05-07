@@ -51,7 +51,7 @@ human-check queue.
 
 ## Install
 
-1. Download the latest `.dmg` from the [Releases page](https://github.com/olekristianbe/loop/releases/latest).
+1. Download the latest macOS `.dmg` from the [Releases page](https://github.com/olekristianbe/loop/releases/latest).
 2. Open the DMG and drag Loop to Applications.
 3. Launch Loop.
 

@@ -2,6 +2,37 @@
 
 All notable changes to Loop will be documented in this file.
 
+## [0.2.1] - 2026-05-07
+
+Stability and workflow release for the v0.2 line. Loop remains macOS
+arm64-only and continues to publish updates through the stable `latest`
+channel.
+
+### Added
+- **Persistent planner workspace state** across navigation, including selected
+  plan, selected task, comments, review notes, and build-start repair drafts.
+- **Skills settings foundation** for Codex and Claude skill presentation,
+  duplicate detection, and repair metadata.
+- **Clearer update entry points** from Settings, the sidebar update pill, and
+  the app menu.
+
+### Changed
+- **Right sidebar workspace** is more practical for Plan, Files, Browser, Git,
+  and build context handoff.
+- **Browser preview annotation flow** now uses a single-mode interaction model
+  with visible send notes and steadier preview overlay behavior.
+- **Git handoff controls** are clearer and refresh project state more
+  predictably.
+- **macOS icon release path** is documented around the bundle-driven `.icon`
+  asset, with `.icns` kept as a local tooling fallback.
+
+### Fixed
+- Browser preview detach/reattach behavior during chat and overlays.
+- Build review notes and human-check state being lost in planner workflows.
+- Build-start repair drafts not guiding the agent with enough context.
+- Local environment target injection for desktop startup.
+- Provider skill registry handling when registry data is unavailable.
+
 ## [0.2.0] - 2026-05-03
 
 Major release. Loop v0.2 is a near-rewrite of the v0.1 workflow around a JSON
@@ -114,6 +145,7 @@ Initial release.
 - Light and dark theme
 - Code signed and notarized by Apple
 
+[0.2.1]: https://github.com/olekristianbe/loop/releases/tag/v0.2.1
 [0.2.0]: https://github.com/olekristianbe/loop/releases/tag/v0.2.0
 [0.1.1]: https://github.com/olekristianbe/loop/releases/tag/v0.1.1
 [0.1.0]: https://github.com/olekristianbe/loop/releases/tag/v0.1.0
