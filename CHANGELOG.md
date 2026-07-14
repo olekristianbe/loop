@@ -2,6 +2,54 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v1.4.0 - 2026-07-14 — Provider-native Plan, Build, and Review
+
+Loop 1.4.0 makes the provider the execution engine for every formal mode. Loop
+keeps the mode UX, project context, artifact contracts, deterministic
+validation, repair boundary, and live activity surface; Claude Code, Codex, or
+Cursor handles the work and any internal agent orchestration. This release also
+includes the v1.3.1-era work that was never published as a stable release.
+
+- Rebuilt Plan as a provider-native conversation and Build/Deep Review as one
+  visible provider-native coordinator turn each, then removed the custom
+  Workflow Engine, hidden stage/task children, and Loop-owned build scheduler.
+- Made `.loop` Markdown the source of truth for new work: validated plans,
+  build reports, review reports, durable run state, and report-derived
+  summaries. `.planner` remains read-only legacy input and migrates
+  non-destructively.
+- Added deterministic plan and build-report validation with exactly one repair
+  request after an invalid write.
+- Added normalized native-agent and tool activity for Claude, Codex, and Cursor
+  with grouped agent progress in the timeline.
+- Made every Build option functional: branch preparation, scoped work items,
+  source-only auto-commit safety, push-after-commit, prevent sleep, advisory
+  network access, and interrupt-backed Stop with a cancelled summary.
+- Expanded daily workflows with context notes, unified verification and human
+  checks, responsive preview presets, desktop notifications, per-mode model
+  overrides, and project-path changes that preserve history.
+- Added Claude image attachments and built-in selections for Claude Fable 5,
+  Cursor Grok 4.5, and the Codex GPT-5.6 variants.
+- Removed Loop's managed Skills settings and automatic host-folder projection.
+  Formal Plan, Build, and Review behavior now comes from each mode's
+  provider-native protocol.
+- Fixed build draft promotion, stale cross-thread completion panels, build
+  stop/restart races, terminal remounts and focus loss during streaming,
+  provider activity noise, UI render loops, project-terminal bootstrap
+  retention, and empty run cards.
+- Fixed the Servers tab so project-scoped HTTP listeners open in Loop's browser
+  and stop actions revalidate project ownership before signaling.
+- Fixed untracked-only commit drafts, kept Loop-owned `.loop` artifacts out of
+  Git actions, and made exact-file commits preserve unrelated staged work
+  through an atomic transaction.
+- Preserved unique Build/Review run history per thread with restart recovery,
+  enforced read-only Review at every provider boundary, validated reports
+  before successful completion, and rejected unsafe `.loop` artifact paths.
+- Removed React Compiler bailouts affecting UI stability, strengthened native
+  code quality gates, resolved the dependency audit, and extended stable macOS
+  updater metadata with final-DMG notarization and verification.
+
+Full notes: [docs/releases/v1.4.0.md](docs/releases/v1.4.0.md).
+
 ## v1.3.0 - 2026-06-18
 
 Loop 1.3.0 moves the desktop app to Tauri with a bundled native backend and
