@@ -2,6 +2,31 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v1.3.0 - 2026-06-18
+
+Loop 1.3.0 moves the desktop app to Tauri with a bundled native backend and
+also includes broad workflow updates across chat and composer, preview,
+terminal, Git, project navigation, settings, provider handling, and release
+packaging.
+
+- Added the Tauri desktop shell and bundled native backend.
+- Moved auth, Git, terminal, orchestration, local server discovery, provider
+  routing, editor reads, and workspace access into the native runtime.
+- Improved chat and composer flows with image drops, preserved pending input,
+  cleaner provider/model state, and split Markdown rendering.
+- Reworked project sidebar, live project context, branch/status display, and
+  local server management.
+- Added desktop preview sessions, native preview screenshots, better preview
+  URL resolution, and scoped server discovery.
+- Expanded Git workflows with branch merge dialogs, Merge PR actions, and
+  generated commit/PR text using the configured model.
+- Stabilized terminal, editor, packaged UI styling, theme tokens, Cursor
+  provider support, provider auth fallback, and desktop update handling.
+- Hardened the stable macOS release path for compatibility with both older
+  Electron installations and current Tauri installations.
+
+Full notes: [docs/releases/v1.3.0.md](docs/releases/v1.3.0.md).
+
 ## [0.2.1] - 2026-05-07
 
 Stability and workflow release for the v0.2 line. Loop remains macOS
