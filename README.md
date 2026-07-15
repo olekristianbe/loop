@@ -21,7 +21,7 @@ preview, Git, and dedicated Plan, Build, and Review modes.
 
 > [!WARNING]
 > Loop is pre-2.0 software. Expect bugs and artifact-format changes. The latest
-> stable release represented by this distribution commit is v1.4.0.
+> stable release represented by this distribution commit is v1.4.1.
 
 ## Plan, Build, and Review
 
@@ -54,7 +54,7 @@ non-destructively.
 
 ## Requirements
 
-Loop v1.4.0 requires an Apple silicon Mac running macOS 15 or newer. Install and
+Loop v1.4.1 requires an Apple silicon Mac running macOS 15 or newer. Install and
 authenticate at least one supported local provider runtime:
 
 - **Claude Code** — install the `claude` CLI and authenticate once.

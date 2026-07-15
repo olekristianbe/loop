@@ -2,6 +2,27 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v1.4.1 - 2026-07-15 — Performance and execution reliability
+
+Loop 1.4.1 improves responsiveness in terminals, streamed code responses, and
+large files while strengthening the contract between the web app and native
+daemon.
+
+- Added WebGL terminal rendering with automatic DOM fallback.
+- Throttled syntax highlighting during streamed code responses while
+  preserving an exact final highlight.
+- Added a read-only preview for text files over 2 MiB or 100,000 lines.
+- Made the daemon authoritative for temporary worktree names, project-terminal
+  execution context, model metadata, effort capabilities, and ultrathink
+  prompting.
+- Reconciled optimistic settings changes to the complete state persisted by the
+  daemon.
+- Added GitHub Enterprise and self-hosted GitLab remote recognition.
+- Added typed native command decoding, development ingress validation, and an
+  automated TypeScript/Rust drift gate covering 14 schemas and 23 RPC methods.
+
+Full notes: [docs/releases/v1.4.1.md](docs/releases/v1.4.1.md).
+
 ## v1.4.0 - 2026-07-14 — Provider-native Plan, Build, and Review
 
 Loop 1.4.0 makes the provider the execution engine for every formal mode. Loop
