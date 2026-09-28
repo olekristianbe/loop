@@ -20,6 +20,8 @@ from another.
 
 ## Install
 
+The latest stable release represented by this distribution commit is v2.0.0.
+
 1. Download the latest `.dmg` from the
    [Releases page](https://github.com/olekristianbe/loop/releases/latest).
 2. Open it and drag Loop to Applications.
