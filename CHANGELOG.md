@@ -2,6 +2,16 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.0.0 — Loop 2.0
+
+- Loop is now a fully native Mac app: faster, lighter, and simpler, with a new
+  icon.
+- Loop keeps working when you close its window, and stays in the menu bar.
+- Use Loop on one Mac from another, over Tailscale.
+- Claude and Codex use the sign-ins you already have on your Mac.
+- Your data is upgraded on first launch, with a backup you can restore for 7
+  days in Settings › Advanced.
+
 ## v1.4.1 - 2026-07-15 — Performance and execution reliability
 
 Loop 1.4.1 improves responsiveness in terminals, streamed code responses, and
