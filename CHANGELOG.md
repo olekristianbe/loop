@@ -5,6 +5,8 @@ All notable changes to Loop will be documented in this file.
 ## v2.0.1
 
 - Loop is faster, and no longer keeps your Mac busy when you're not using it.
+- If you updated from Loop 1, the old version no longer keeps running in the
+  background.
 - Chats from Codex and Claude show up in the right project and keep your
   titles.
 - Mark Unread, Generate title with AI, archiving, and deleting work again.
