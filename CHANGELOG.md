@@ -2,6 +2,16 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.0.1
+
+- Loop is faster, and no longer keeps your Mac busy when you're not using it.
+- Chats from Codex and Claude show up in the right project and keep your
+  titles.
+- Mark Unread, Generate title with AI, archiving, and deleting work again.
+- Type / anywhere in a message to use any Codex or Claude skill.
+- Push and Pull work when GitHub has newer commits.
+- Tables in replies look like tables.
+
 ## v2.0.0 — Loop 2.0
 
 - Loop is now a fully native Mac app: faster, lighter, and simpler, with a new

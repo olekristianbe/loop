@@ -20,7 +20,7 @@ from another.
 
 ## Install
 
-The latest stable release represented by this distribution commit is v2.0.0.
+The latest stable release represented by this distribution commit is v2.0.1.
 
 1. Download the latest `.dmg` from the
    [Releases page](https://github.com/olekristianbe/loop/releases/latest).
