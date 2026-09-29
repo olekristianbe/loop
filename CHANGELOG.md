@@ -2,6 +2,10 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.0.2
+
+- On macOS 15, you can type in the message box again.
+
 ## v2.0.1
 
 - Loop is faster, and no longer keeps your Mac busy when you're not using it.
