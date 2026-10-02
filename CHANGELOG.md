@@ -2,6 +2,15 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.1.0
+
+- Loop uses almost no power when you're not using it, and replies, typing, and
+  switching chats are smoother.
+- Claude no longer needs Node.js, uses less memory, and gets ready while you
+  type.
+- Updates upgrade your data without asking, and still keep a backup.
+- Fixed: opening a chat with a table in a reply could make Loop quit.
+
 ## v2.0.2
 
 - On macOS 15, you can type in the message box again.

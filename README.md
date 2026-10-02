@@ -20,7 +20,7 @@ from another.
 
 ## Install
 
-The latest stable release represented by this distribution commit is v2.0.2.
+The latest stable release represented by this distribution commit is v2.1.0.
 
 1. Download the latest `.dmg` from the
    [Releases page](https://github.com/olekristianbe/loop/releases/latest).
@@ -31,7 +31,7 @@ The latest stable release represented by this distribution commit is v2.0.2.
 
 - An Apple silicon Mac with macOS 15 or newer.
 - At least one agent, installed and signed in:
-  - **Claude Code**, with Node.js;
+  - **Claude Code**;
   - **Codex**.
 
 ## Updates
