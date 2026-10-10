@@ -20,7 +20,7 @@ from another.
 
 ## Install
 
-The latest stable release represented by this distribution commit is v2.1.0.
+The latest stable release represented by this distribution commit is v2.2.0.
 
 1. Download the latest `.dmg` from the
    [Releases page](https://github.com/olekristianbe/loop/releases/latest).
@@ -36,8 +36,8 @@ The latest stable release represented by this distribution commit is v2.1.0.
 
 ## Updates
 
-Loop checks for updates by itself. When one is ready, it shows at the bottom of
-the sidebar. You can also choose **Loop › Check for Updates…**.
+Loop downloads updates by itself and installs them when you quit, or when you
+choose **Restart**. You can also choose **Loop › Check for Updates…**.
 
 ## Support
 

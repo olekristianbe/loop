@@ -2,6 +2,21 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.2.0
+
+- A calmer sidebar: chats stay where you put them, and you can Snooze or
+  Settle them. Settle replaces Archive.
+- Questions and approvals from Claude and Codex are answered in one card,
+  from the keyboard.
+- Start a chat without a project.
+- Work that keeps running after a reply stays visible, and Loop tells you
+  when it's done.
+- A chat in a worktree has its own Git, Files, and terminal.
+- Setting up a project's workflows takes a few clicks.
+- Loop installs its own updates, and helps keep Claude Code and Codex
+  current.
+- If you use Loop on two Macs, update both.
+
 ## v2.1.0
 
 - Loop uses almost no power when you're not using it, and replies, typing, and
