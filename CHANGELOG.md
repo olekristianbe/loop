@@ -2,6 +2,21 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.2.1
+
+- Replies no longer go blank or overlap while they stream.
+- Slow models, like GPT 6.1 sol, no longer time out.
+- Copied replies paste neatly into Slack, Notes, and Mail, and pasted lists
+  keep their shape.
+- Settled chats sort by when you last used them, and quiet chats settle
+  themselves after 30 days.
+- Stop a background task with ✕.
+- Files open ready to edit, with breadcrumbs.
+- New thread is back beside Search, and panels open smaller.
+- ⌘K filters the sidebar to the project you open.
+- Drop images anywhere in a chat.
+- Loop comes to the front after it updates.
+
 ## v2.2.0
 
 - A calmer sidebar: chats stay where you put them, and you can Snooze or
