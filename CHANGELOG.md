@@ -2,6 +2,27 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.3.0
+
+- Loop is fast again: it no longer uses a full core while chats stream, and
+  its data shrinks after the upgrade.
+- A Browser beside your chat: preview your app, pick or draw on what to
+  change, add a note, and send it to the agent. Type @Browser to have the
+  agent use it too.
+- An iOS Simulator beside your chat, for you and the agent. Type @Simulator.
+- See how much of your Claude and Codex plans you've used.
+- Ship: commit, push, open a pull request, wait for checks, merge, and clean
+  up in one click.
+- Dictate with the microphone button, or hold Right ⌥.
+- Attach any file, and write real lists in the message box.
+- Calmer replies: finished work folds into one line, a reply selects as one
+  piece, and links and file paths can be clicked.
+- Projects can be sorted, hidden, pointed at a moved folder, merged, and
+  given an icon.
+- Fixed: sending in a settled chat, notifications that came too early, image
+  files in Git changes, and Tailscale on some Macs.
+- If you use Loop on two Macs, update both.
+
 ## v2.2.1
 
 - Replies no longer go blank or overlap while they stream.
