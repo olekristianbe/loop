@@ -2,6 +2,17 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.3.1
+
+- Fixed: a Browser crash, chats that jumped or went blank, pictures sent
+  while Claude works, lost chat context, and Quick Capture pulling Loop to
+  the front.
+- A cleaner message box, with the mic and Send inside it.
+- Command output shows in the chat, and running work is easier to follow.
+- ⌥⌘B opens the side panel, and each chat keeps its own size.
+- Links open in Loop's Browser, and agents can add to your Inbox.
+- Updates say what they're waiting for, and remote Macs connect more easily.
+
 ## v2.3.0
 
 - Loop is fast again: it no longer uses a full core while chats stream, and
