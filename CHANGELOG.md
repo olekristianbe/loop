@@ -2,6 +2,17 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.3.2
+
+- Fixed: the message box now grows with long messages, keeps what you're
+  typing in view, and no longer overlaps its bottom row.
+- Fixed: chats open straight away instead of blank, even long ones.
+- Fixed: each chat keeps its own side-panel size.
+- Fixed: Show Pairing Code no longer hides Loop's window.
+- A clean image viewer: zoom with a pinch, double-click for full size.
+- Thin scroll bars everywhere, and command output wraps instead of
+  scrolling sideways.
+
 ## v2.3.1
 
 - Fixed: a Browser crash, chats that jumped or went blank, pictures sent
