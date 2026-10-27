@@ -2,6 +2,22 @@
 
 All notable changes to Loop will be documented in this file.
 
+## v2.4.0
+
+- Agents can delegate tasks to other chats on Claude or Codex, wait for
+  them, and read and message your other chats; agents in your terminal can
+  connect too.
+- A chat stopped by a usage limit carries on by itself when it resets.
+- The Browser and Simulator work from your other Mac.
+- Long chats scroll and stream smoothly.
+- The Overview is the Work tab in the side panel; every tab can be closed.
+- Project tabs are icons, and ⌘N, ⌘⇧N and ⌥⌘N make new chats.
+- Finished chats say Done; Quote a passage of a reply; one Annotate tool.
+- Pull requests in Loop, with merge commits by default; worktrees get good
+  names.
+- Add projects from GitHub, and one Inbox across your Macs.
+- Downloads and updates come from loop.lytic.no.
+
 ## v2.3.2
 
 - Fixed: the message box now grows with long messages, keeps what you're

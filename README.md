@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/olekristianbe/loop/releases/latest">Download Loop</a>
+  <a href="https://loop.lytic.no">Download Loop</a>
 </p>
 
 ---
@@ -20,10 +20,10 @@ from another.
 
 ## Install
 
-The latest stable release represented by this distribution commit is v2.3.2.
+The latest stable release represented by this distribution commit is v2.4.0.
+From v2.4.0 on, Loop is downloaded and updated from [loop.lytic.no](https://loop.lytic.no).
 
-1. Download the latest `.dmg` from the
-   [Releases page](https://github.com/olekristianbe/loop/releases/latest).
+1. Download Loop from [loop.lytic.no](https://loop.lytic.no).
 2. Open it and drag Loop to Applications.
 3. Open Loop.
 
